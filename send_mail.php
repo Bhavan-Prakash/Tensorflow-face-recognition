@@ -29,7 +29,7 @@ curl_setopt_array($curl, [
 				]
 		],
 		'from' => [
-				'email' => 'info@perpetualinnovation.net'
+				'email' => 'info@bhavan.net'
 		],
 		'content' => [
 				[
@@ -39,8 +39,8 @@ curl_setopt_array($curl, [
 		]
 	]),
 	CURLOPT_HTTPHEADER => [
-		"X-RapidAPI-Host: rapidprod-sendgrid-v1.p.rapidapi.com",
-		"X-RapidAPI-Key: 270e6f3f0cmsh9907cf3c22bdf5bp1e264cjsn5b0a3a9a58de",
+		"X-RapidAPI-Host: bhavan1.p.rapidapi.com",
+		"X-RapidAPI-Key: your key",
 		"content-type: application/json"
 	],
 ]);
