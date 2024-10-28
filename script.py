@@ -1,9 +1,9 @@
 import cv2
 import face_recognition
 
-# Load the known faces and their labels
+
 known_faces = []
-known_labels = ["Karan", "Anmol"]
+known_labels = ["bhavan"]
 
 for label in known_labels:
     face_descriptors = []
