@@ -1,9 +1,41 @@
-# IMPORTANT: Bug Fixes
+# Face Recognition Using TensorFlow Lite
 
-## `navigator.getUserMedia`
+## Overview
+This project implements real-time face recognition using a TensorFlow Lite-based model for efficient, on-device processing. It ensures low latency and high accuracy while running seamlessly on both Android and iOS platforms. The frontend is developed using React Native, leveraging HTML, JavaScript, and React.js to provide a responsive and consistent user experience across devices.
 
-`navigator.getUserMedia` is now deprecated and is replaced by `navigator.mediaDevices.getUserMedia`. To fix this bug replace all versions of `navigator.getUserMedia` with `navigator.mediaDevices.getUserMedia`
+## Features
+- **On-Device Face Recognition**: Uses TensorFlow Lite for fast and efficient processing without relying on cloud services.
+- **Cross-Platform Compatibility**: Works on both Android and iOS devices.
+- **Optimized Performance**: Low-latency face detection with high accuracy.
+- **React Native Frontend**: Provides an interactive and mobile-friendly interface.
 
-## Low-end Devices Bug
+## Technologies Used
+- **Frontend**: React Native (HTML, JavaScript, React.js)
+- **Backend**: TensorFlow Lite (for on-device face recognition)
 
-The video eventListener for `play` fires up too early on low-end machines, before the video is fully loaded, which causes errors to pop up from the Face API and terminates the script (tested on Debian [Firefox] and Windows [Chrome, Firefox]). Replaced by `playing` event, which fires up when the media has enough data to start playing.
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/face-recognition-tflite.git
+   cd face-recognition-tflite
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Ensure your mobile device has the required permissions for camera access.
+4. Run the application:
+   ```sh
+   npx react-native run-android  # For Android
+   npx react-native run-ios      # For iOS
+   ```
+
+
+> Replace `image-path.png` with the actual path of your uploaded image in the repository.
+
+## Contributing
+Feel free to submit issues or pull requests to enhance the project.
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
+
